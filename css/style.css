@@ -11,3 +11,35 @@
     box-sizing: border-box;
 }
 
+/****************
+container spotify
+****************/
+
+body{
+    background-color: var(--bg-second-color);
+    height: 100vh;
+}
+
+#site_main{
+    display: flex;
+}
+
+#site_main .item{
+    background-color: var(--bg-first-color);
+    width: 200px;
+    height: calc(100vh - 80px);
+}
+
+#site_footer{
+    background-color: var(--bg-nav-color);
+    height: 80px;
+    width: 100vw;
+}
+
+.item-main{
+    width: calc(100vw - 30px);
+    height: calc(100vh - 80px);
+}
+
+/***************
+
