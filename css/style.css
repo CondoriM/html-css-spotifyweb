@@ -7,6 +7,7 @@
     --font-family: 'Roboto', sans-serif;
 
     --text-first-color: #6e6e6e;
+    --text-second-color: #ffffff;
 }
 
 *{
@@ -29,11 +30,10 @@ body{
     display: flex;
 }
 
-#site_main .item{
+#site_main .barra{
     background-color: var(--bg-first-color);
     color: var(--text-first-color);
-    width: 200px;
-    
+    width: 250px;
     height: calc(100vh - 80px);
 }
 
@@ -44,7 +44,6 @@ body{
 }
 
 .item-main{
-    width: calc(100vw - 30px);
     height: calc(100vh - 80px);
 }
 
@@ -55,27 +54,39 @@ css aside bar
 /*IMG LOGO*/
 
 .logo{
-    width: 100%;
+    width: 75%;
     padding: 1rem;
 }
 
 /*css condiviso icone*/
-.icon{
-    height: 30px;
+.pad{
     padding: 0 0 0 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-first-color);
 }
 
 .icon-svg{
     width: 25px;
-    line-height: 30px;
     vertical-align: middle;
 }
 
 .text-icon{
     line-height: 30px;
-    vertical-align: middle;
 }
 
-.opzioni{
+/***************
+sezione playlist
+***************/
 
+.playlist h4{
+    color: var(--text-second-color);
+    margin-top: 1.5rem;
+}
+
+.icon{
+    width: 40px;
+    color: var(--text-second-color);
 }
