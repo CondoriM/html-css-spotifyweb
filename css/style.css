@@ -1,0 +1,13 @@
+:root{
+    --bg-first-color: #000000;
+    --bg-second-color: #141922;
+    --bg-third-color: #080b12;
+    --bg-nav-color: #282828;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
