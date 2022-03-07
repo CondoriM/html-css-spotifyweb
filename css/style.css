@@ -47,6 +47,10 @@ body{
     height: calc(100vh - 80px);
 }
 
+.barra{
+    position: relative;
+}
+
 /************
 css aside bar
 ************/
@@ -88,5 +92,45 @@ sezione playlist
 
 .icon{
     width: 40px;
+    vertical-align: middle;
+    color: var(--text-second-color);
+}
+
+.playlist span{
+    line-height: 30px;
+}
+
+.playlist p{
+    line-height: 35px;;
+}
+
+/*sezione user*/
+
+.user-profile{
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.5rem;
+}
+
+.icon-mini{
+    width: 25px;
+    vertical-align: middle;
+    filter: opacity(50%);
+}
+
+
+.download{
+    border-bottom: 1px solid var(--text-first-color);
+}
+
+.user img{
+    width: 22px;
+    background-color: var(--text-first-color);
+    border-radius: 50%;
+    margin: 0.5rem;
+    vertical-align: middle;
+}
+
+.user span{
     color: var(--text-second-color);
 }
