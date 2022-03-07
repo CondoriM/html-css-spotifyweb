@@ -3,6 +3,10 @@
     --bg-second-color: #141922;
     --bg-third-color: #080b12;
     --bg-nav-color: #282828;
+    
+    --font-family: 'Roboto', sans-serif;
+
+    --text-first-color: #6e6e6e;
 }
 
 *{
@@ -17,6 +21,7 @@ container spotify
 
 body{
     background-color: var(--bg-second-color);
+    font-family: var(--font-family);
     height: 100vh;
 }
 
@@ -26,7 +31,9 @@ body{
 
 #site_main .item{
     background-color: var(--bg-first-color);
+    color: var(--text-first-color);
     width: 200px;
+    
     height: calc(100vh - 80px);
 }
 
@@ -41,5 +48,34 @@ body{
     height: calc(100vh - 80px);
 }
 
-/***************
+/************
+css aside bar
+************/
 
+/*IMG LOGO*/
+
+.logo{
+    width: 100%;
+    padding: 1rem;
+}
+
+/*css condiviso icone*/
+.icon{
+    height: 30px;
+    padding: 0 0 0 1rem;
+}
+
+.icon-svg{
+    width: 25px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.text-icon{
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.opzioni{
+
+}
