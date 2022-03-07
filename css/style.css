@@ -107,9 +107,11 @@ sezione playlist
 /*sezione user*/
 
 .user-profile{
+    width: 85%;
     position: absolute;
     bottom: 0;
     margin-left: 0.5rem;
+    background-color: var(--bg-first-color);
 }
 
 .icon-mini{
@@ -132,5 +134,28 @@ sezione playlist
 }
 
 .user span{
+    color: var(--text-second-color);
+}
+
+/*****************
+sezione principale
+*****************/
+
+/*BARRA UPGRADE*/
+.upgrade{
+    width: calc(100vw - 250px);
+    background-color: var(--bg-third-color);
+    height: 83px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.btn{
+    border: 2px solid var(--text-second-color);
+    border-radius: 20px;
+    padding: 0.6rem 3rem;
+    font-size: 0.8rem;
     color: var(--text-second-color);
 }
