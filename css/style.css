@@ -159,3 +159,31 @@ sezione principale
     font-size: 0.8rem;
     color: var(--text-second-color);
 }
+
+/*BARRA CATEGORIE CANZONI*/
+.categorie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.categorie div{
+    margin: 0.5rem 1rem;
+}
+
+/*SEZIONE CANZONI*/
+.songs{
+    color: var(--text-second-color);
+    padding: 0 1rem;
+}
+
+.cover{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cover img{
+    width: calc(100% / 7);
+    flex-wrap: nowrap;
+}
