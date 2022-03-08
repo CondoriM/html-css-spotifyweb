@@ -16,6 +16,39 @@
     box-sizing: border-box;
 }
 
+/*****************
+VALLORI UNIVERSALI
+*****************/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad-l{
+    padding-left: 0.5rem;
+}
+
+.pad-lr{
+    padding: 0 0.7rem;
+}
+
+.text-s{
+    color: var(--text-second-color);
+}
+
+.text-f{
+    color: var(--text-first-color);
+}
+
+
 /****************
 container spotify
 ****************/
@@ -186,4 +219,57 @@ sezione principale
 .cover img{
     width: calc(100% / 7);
     flex-wrap: nowrap;
+}
+
+/*************
+SEZIONE FOOTER
+*************/
+
+/*sezione left*/
+#site_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.box-left img{
+    width: 40px;
+}
+
+footer p{
+    font-size: 0.8rem;
+}
+
+/*sezione mid*/
+.box-mid{
+    color: var(--text-second-color);
+}
+
+.box-mid span{
+    font-size: 0.7rem;
+}
+
+#site_footer .box-mid{
+    justify-content: space-around;
+}
+
+.riproduzione{
+    height: 2px;
+    background-color: var(--text-first-color);
+    width: 20vw;
+}
+
+.border-play{
+    border: 2px solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.border-play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-52%);
 }
