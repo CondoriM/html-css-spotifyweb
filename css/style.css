@@ -48,6 +48,14 @@ VALLORI UNIVERSALI
     color: var(--text-second-color);
 }
 
+.margin-tb{
+    margin: 1rem 0;
+}
+
+img{
+    width: 100%;
+}
+
 /****************
 container spotify
 ****************/
@@ -207,14 +215,21 @@ sezione principale
 }
 
 /*SEZIONE CANZONI*/
+.overflow-h{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 .songs{
     color: var(--text-second-color);
     padding: 0 1rem;
 }
 
+
+
 .cover{
+    gap: 2rem;
     display: flex;
-    justify-content: space-around;
 }
 
 .cover div{
