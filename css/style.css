@@ -40,14 +40,13 @@ VALLORI UNIVERSALI
     padding: 0 0.7rem;
 }
 
-.text-s{
-    color: var(--text-second-color);
-}
-
 .text-f{
     color: var(--text-first-color);
 }
 
+.text-s{
+    color: var(--text-second-color);
+}
 
 /****************
 container spotify
@@ -77,7 +76,10 @@ body{
 }
 
 .item-main{
+    width: 100vw;
     height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
 }
 
 .barra{
@@ -176,7 +178,6 @@ sezione principale
 
 /*BARRA UPGRADE*/
 .upgrade{
-    width: calc(100vw - 250px);
     background-color: var(--bg-third-color);
     height: 83px;
     display: flex;
@@ -216,7 +217,7 @@ sezione principale
     justify-content: space-around;
 }
 
-.cover img{
+.cover div{
     width: calc(100% / 7);
     flex-wrap: nowrap;
 }
@@ -272,4 +273,9 @@ footer p{
     top: 50%;
     left: 50%;
     transform: translate(-40%,-52%);
+}
+
+/*sezione right*/
+.box-right .riproduzione{
+    width: 7vw;
 }
