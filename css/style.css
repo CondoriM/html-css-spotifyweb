@@ -8,6 +8,7 @@
 
     --text-first-color: #6e6e6e;
     --text-second-color: #ffffff;
+    --text-third-color: #000000;
 }
 
 *{
@@ -54,6 +55,10 @@ VALLORI UNIVERSALI
     color: var(--text-second-color);
 }
 
+.text-t{
+    color: var(--text-third-color);
+}
+
 .margin-tb{
     margin: 1rem 0;
 }
@@ -69,6 +74,10 @@ img{
 
 .circle{
     border-radius: 50%;
+}
+
+.align-c{
+    text-align: center;
 }
 
 /*****
@@ -161,13 +170,20 @@ sezione playlist
 }
 
 .icon{
-    width: 40px;
-    vertical-align: middle;
-    color: var(--text-second-color);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: var(--text-first-color);
+    text-align: center;
+}
+
+.icon span{
+    font-size: 2rem;
 }
 
 .playlist span{
     line-height: 30px;
+    vertical-align: middle;
 }
 
 .playlist p{
@@ -251,10 +267,14 @@ sezione principale
     display: flex;
 }
 
-.cover div{
+/*celle flex*/
+
+.cover .flex-cells{
     width: calc(100% / 7);
     flex-wrap: nowrap;
 }
+
+
 
 /*************
 SEZIONE FOOTER
