@@ -10,6 +10,8 @@
     --text-second-color: #ffffff;
     --text-third-color: #000000;
 
+    --green-bord: #adff2f;
+
     --color-cover-hover: rgba(110,110,110,0.5)
 }
 
@@ -146,6 +148,9 @@ css aside bar
 ************/
 
 /*IMG LOGO*/
+.pad{
+    padding: 0 0 0 1rem;
+}
 
 .logo{
     width: 75%;
@@ -153,10 +158,6 @@ css aside bar
 }
 
 /*css condiviso icone*/
-.pad{
-    padding: 0 0 0 1rem;
-}
-
 a{
     text-decoration: none;
     color: var(--text-first-color);
@@ -171,6 +172,13 @@ a{
     line-height: 30px;
 }
 
+.green{
+    border-left: 3px solid var(--green-bord);
+}
+
+.opzioni a{
+    padding: 0 0 0 1rem;
+}
 /***************
 sezione playlist
 ***************/
@@ -366,6 +374,25 @@ footer p{
     width: 7vw;
 }
 
-@media screen and (min-width: 1200px) {
-    
+@media screen and (max-width: 1200px) {
+    .flex-cells{
+        width: calc(100% / 5);
+        flex-wrap: wrap;
+    }
+
+    .cover{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .flex-cells{
+        width: calc(100% / 3);
+        flex-wrap: wrap;
+    }
+
+    .cover{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
