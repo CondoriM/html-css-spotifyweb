@@ -9,6 +9,8 @@
     --text-first-color: #6e6e6e;
     --text-second-color: #ffffff;
     --text-third-color: #000000;
+
+    --color-cover-hover: rgba(110,110,110,0.5)
 }
 
 *{
@@ -90,6 +92,19 @@ HOVER
 
 .barra p:hover{
     color: var(--text-second-color);
+}
+
+.play-h:hover .position-h { 
+    display: inline-block;
+}
+
+.play-h:hover{
+    background-color: var(--color-cover-hover);
+    z-index: 1;
+}
+
+.play-h:hover .play-h img{
+    z-index: 20;
 }
 
 /****************
@@ -263,13 +278,34 @@ sezione principale
 }
 
 .cover{
-    gap: 2rem;
+    gap: 2.2rem;
     display: flex;
+}
+
+.play-h{
+    position: relative;
+}
+
+.position-h{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    display: none;
+}
+
+.position-h i{
+    font-size: 2rem;
+}
+
+.position-h .border-play{
+    width: 50px;
+    height: 50px;
+    border-width: 5px;
 }
 
 /*celle flex*/
 
-.cover .flex-cells{
+.flex-cells{
     width: calc(100% / 7);
     flex-wrap: nowrap;
 }
