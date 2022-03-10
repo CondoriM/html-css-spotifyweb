@@ -32,6 +32,12 @@ VALLORI UNIVERSALI
     align-items: center;
 }
 
+.flex-bet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .pad-l{
     padding-left: 0.5rem;
 }
@@ -52,8 +58,29 @@ VALLORI UNIVERSALI
     margin: 1rem 0;
 }
 
+.overflow-h{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 img{
     width: 100%;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+/*****
+HOVER
+*****/
+
+.h-color:hover{
+    color: var(--text-second-color);
+}
+
+.barra p:hover{
+    color: var(--text-second-color);
 }
 
 /****************
@@ -151,10 +178,7 @@ sezione playlist
 
 .user-profile{
     width: 85%;
-    position: absolute;
-    bottom: 0;
-    margin-left: 0.5rem;
-    background-color: var(--bg-first-color);
+    
 }
 
 .icon-mini{
@@ -215,17 +239,12 @@ sezione principale
 }
 
 /*SEZIONE CANZONI*/
-.overflow-h{
-    overflow: scroll;
-    overflow-x: hidden;
-}
+
 
 .songs{
     color: var(--text-second-color);
     padding: 0 1rem;
 }
-
-
 
 .cover{
     gap: 2rem;
@@ -293,4 +312,8 @@ footer p{
 /*sezione right*/
 .box-right .riproduzione{
     width: 7vw;
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
