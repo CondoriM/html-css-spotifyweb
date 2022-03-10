@@ -96,15 +96,11 @@ HOVER
 
 .play-h:hover .position-h { 
     display: inline-block;
-}
-
-.play-h:hover{
-    background-color: var(--color-cover-hover);
     z-index: 1;
 }
 
-.play-h:hover .play-h img{
-    z-index: 20;
+.play-h:hover img{
+    filter: grayscale(50%);
 }
 
 /****************
