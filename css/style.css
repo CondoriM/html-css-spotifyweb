@@ -157,6 +157,10 @@ css aside bar
     padding: 1rem;
 }
 
+.invisible{
+    display: none;
+}
+
 /*css condiviso icone*/
 a{
     text-decoration: none;
@@ -383,11 +387,19 @@ footer p{
     .cover{
         flex-wrap: wrap;
     }
+
+    .songs h3{
+        font-size: 1rem;
+    }
+
+    .songs p{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .flex-cells{
-        width: calc(100% / 3);
+        width: calc(100% / 2.5);
         flex-wrap: wrap;
     }
 
@@ -395,4 +407,163 @@ footer p{
         flex-wrap: wrap;
         gap: 1rem;
     }
+
+    .flex-cells h3{
+        font-size: 0.8rem;
+        margin: 0.4rem 0;
+    }
+
+    .songs p{
+        font-size: 0.8rem;
+    }
+
+    .categorie{
+        padding: 0;
+    }
+
+    .categorie div{
+        font-size: 0.7rem;
+    }
+
+    .box-right .pad-l{
+        font-size: 0.8rem;
+    }
+
+    .upgrade .btn{
+        font-size: 0.7rem;
+        padding: 0.3rem 1.5rem;
+    }
 }
+
+
+@media screen and (max-width: 400px) {
+
+    .flex-bet{
+        align-items: center;
+    }
+
+    .flex-cells{
+        width: calc(100% / 2.3);
+    }
+    .playlist{
+        display: none;
+    }
+
+    .barra{
+        padding: 0;
+    }
+
+    .opzioni span{
+        display: none;
+    }
+
+    .user-profile span{
+        display: none;
+    }
+
+    #site_main .barra{
+        width: 55px;
+    }
+
+    .green{
+        border: none;
+    }
+
+    .opzioni a{
+        padding: 0 0.5rem;
+    }
+
+    .download{
+        border: none;
+    }
+
+    .icon-mini{
+        transform: translate(7px, 4px);
+        width: 20px;
+    }
+
+    .logo-img{
+        display: none;
+    }
+
+    .invisible{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 1.5rem;
+    }
+
+    .upgrade{
+        height: 60px;
+    }
+
+    .upgrade .btn{
+        font-size: 0.7rem;
+        padding: 0.3rem 1.5rem;
+    }
+
+    .categorie div{
+        font-size: 0.7rem;
+    }
+
+    .categorie{
+        padding: 0;
+    }
+
+    .songs h3{
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+
+    .songs p{
+        font-size: 0.8rem;
+    }
+
+    .box-left img{
+        width: 30px;
+    }
+
+    .box-left h4{
+        font-size: 0.6rem;
+    }
+
+    .box-left p{
+        font-size: 0.5rem;    
+    }
+
+    .box-left .icone-media{
+        flex-direction: column;
+    }
+
+    .icone-media i{
+        font-size: 0.8rem;
+    }
+
+    .box-mid i{
+        font-size: 0.6rem;
+    }
+
+    .box-mid .border-play{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .box-mid .pad-lr{
+        font-size: 0.5rem;
+    }
+
+    .box-right{
+        flex-wrap: nowrap;
+    }
+
+    .box-right .pad-l{
+        font-size: 0.6rem;
+    }
+
+    .icons{
+        display: flex;
+    }
+
+}
+
+
