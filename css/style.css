@@ -105,6 +105,47 @@ HOVER
     filter: grayscale(50%);
 }
 
+.upgrade .btn:hover{
+    transform: scale(1.1);
+}
+
+.categorie div a:hover{
+    color: var(--text-second-color)
+}
+
+/*hover icone left footer*/
+.box-left p:hover{
+    text-decoration: underline;
+    color: var(--text-second-color);
+}
+
+.box-left i:hover{
+    color: var(--text-second-color);
+}
+
+/*hover barra riproduzione*/
+/*effetto pulse bottoni play*/
+.border-play:hover{
+    transform: scale(1.1);
+}
+
+.riproduzione:hover .riproduzione-h{
+    width: 30px;
+    height: 2px;
+    background-color: var(--green-bord);
+    position: relative;
+}
+
+.riproduzione:hover .point{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--text-second-color);
+    position: absolute;
+    left: 30px;
+    top:-1px;
+}
+
 /****************
 container spotify
 ****************/
@@ -275,6 +316,18 @@ sezione principale
 
 .categorie div{
     margin: 0.5rem 1rem;
+}
+
+.cont-green{
+    position: relative;
+}
+
+.under-green{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--green-bord);
+    left: 14px;
 }
 
 /*SEZIONE CANZONI*/
